@@ -3,7 +3,7 @@
 <div class="row">
     <div class="col">
     <div class="card">
-
+xxx
 <img class="card-img-top" src="imagen/dainese.png" alt="">
 
 <div class="card-body">
