@@ -1,14 +1,16 @@
-<?php include("template/cabecera.php"); ?>
-
-         <div class="jumbotron">
-            <h1 class="display-3">EMBAJADA BIKE</h1>
-            <p class="lead">AGENDA Y DEJA EN NUESTRAS MANOS TU PASION</p>
-            <img src="" alt="">
-            <hr class="my-2">
-         
-            </p>
-        </div>
-
-<?php include("template/pie.php"); ?>
-
-
+<?php
+     ob_start();
+     require_once "models/Database.php";
+     if(!isset($_REQUEST['c'])){
+          require_once "controllers/Landing.php";
+          $controller = new Landing;
+          $controller -> main();
+     } else {
+          $controller = $_REQUEST['c'];
+          require_once "controllers/" . $controller . ".php";
+          $controller = new $controller;
+          $action  = isset($_REQUEST['a']) ? $_REQUEST['a'] : 'main';
+          call_user_func(array($controller, $action));
+     }
+     ob_end_flush();
+?>
