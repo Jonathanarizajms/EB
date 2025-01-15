@@ -24,27 +24,48 @@
 }
 </style>
 
-<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1000">
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
   <div class="carousel-inner">
     <div class="carousel-item active w-100 h-50">
-      <img src="assets/dep/land/img/carousell/3.jpg" class="d-block w-100 rounded border" alt="...">
+      <img src="assets/dep/land/img/carousell/4.jpeg" class="d-block w-100 rounded border" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+        <h5>..</h5>
+        <p>...</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="assets/dep/land/img/carousell/2.png" class="d-block w-100 rounded border" alt="...">
+      <img src="assets/dep/land/img/carousell/5.jpeg" class="d-block w-100 rounded border" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
+        <h5>..</h5>
+        <p>...</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="assets/dep/land/img/carousell/1.jpg" class="d-block w-100 rounded border" alt="...">
+      <img src="assets/dep/land/img/carousell/6.jpeg" class="d-block w-100 rounded border" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
+        <h5>..</h5>
+        <p>...</p>
+      </div>
+    </div>
+        <div class="carousel-item">
+      <img src="assets/dep/land/img/carousell/7.jpeg" class="d-block w-100 rounded border" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>..</h5>
+        <p>...</p>
+      </div>
+    </div>
+        <div class="carousel-item">
+      <img src="assets/dep/land/img/carousell/8.jpeg" class="d-block w-100 rounded border" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>..</h5>
+        <p>...</p>
+      </div>
+    </div>
+        <div class="carousel-item">
+      <img src="assets/dep/land/img/carousell/9.jpeg" class="d-block w-100 rounded border" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>..</h5>
+        <p>...</p>
       </div>
     </div>
   </div>
@@ -111,28 +132,16 @@
 
 
 <div class="container-fluid mt-4">
-  <div class="row g-0"> <!-- g-0 elimina el espacio entre columnas -->
-    <div class="col-6 col-md-3"> <!-- 6 columnas en pantallas pequeñas, 3 en pantallas medianas y grandes -->
-      <img src="assets/dep/land/img/oferts/1.jpg" class="img-fluid" alt="Imagen 1">
+  <div class="row justify-content-center g-4"> <!-- 'justify-content-center' alinea las columnas al centro -->
+    <div class="col-6 col-md-3 "> <!-- 6 columnas en pantallas pequeñas, 3 en pantallas medianas y grandes -->
+      <img src="assets/dep/land/img/oferts/7.jpeg" class="img-fluid" alt="Imagen 1">
     </div>
     <div class="col-6 col-md-3">
-      <img src="assets/dep/land/img/oferts/2.jpg" class="img-fluid" alt="Imagen 2">
+      <img src="assets/dep/land/img/oferts/8.jpeg" class="img-fluid" alt="Imagen 2">
     </div>
-    <div class="col-6 col-md-3">
-      <img src="assets/dep/land/img/oferts/3.png" class="img-fluid" alt="Imagen 3">
-    </div>
-    <div class="col-6 col-md-3">
-      <img src="assets/dep/land/img/oferts/4.jpg" class="img-fluid" alt="Imagen 4">
-    </div>
-    <div class="col-6 col-md-3">
-      <img src="assets/dep/land/img/oferts/5.jpg" class="img-fluid" alt="Imagen 5">
-    </div>
-    <div class="col-6 col-md-3">
-      <img src="assets/dep/land/img/oferts/6.jpg" class="img-fluid" alt="Imagen 6">
-    </div>
-
   </div>
 </div>
+
 
 <div class="row">
   <div class="col">
