@@ -3,48 +3,56 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>En bajada bike</title>
+    <title>Transporte de Bicicletas | Embajada Bike</title>
+    <meta name="description" content="Embajada Bike ofrece transporte seguro y cobertura de eventos para ciclistas en 2025. Conoce nuestros talleres y servicios personalizados para tu bici.">
+    <meta name="keywords" content="transporte de bicicletas, eventos ciclistas, talleres de bicicletas, ciclismo seguro">
+    <meta name="author" content="Embajada Bike">
     <link rel="stylesheet" type="text/css" href="assets/dep/land/bootstrap/bootstrap.css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-XXXXX-Y');
+    </script>
   </head>
   <body>
 
 <div class="alert alert-primary alert-dismissible fade show text-center mb-1 rounded" role="alert">
-	  <strong>Transportamos Tu Bici</strong> Sabemos que quieres lo mejor para tu compañera de tutas
-	  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-	</div>
+  <strong>Transportamos Tu Bici</strong> Sabemos que quieres lo mejor para tu compañera de rutas
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
 
 <style>
-	.carousel-item img {
-  width: 100%; /* Ancho al 100% */
-  max-height: 80vh; /* Altura máxima del 80% de la ventana */
-  object-fit: cover; /* Mantiene la proporción de la imagen */
-  display: block; /* Asegura que la imagen se comporte como un bloque */
-  margin: 0 auto; /* Centra la imagen */
-}
+  .carousel-item img {
+    width: 100%;
+    max-height: 80vh;
+    object-fit: cover;
+    margin: 0 auto;
+  }
 </style>
 
-<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1000">
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
   <div class="carousel-inner">
-    <div class="carousel-item active w-100 h-50">
-      <img src="assets/dep/land/img/carousell/3.jpg" class="d-block w-100 rounded border" alt="...">
+    <div class="carousel-item active">
+      <img src="assets/dep/land/img/carousell/4.jpeg" class="d-block w-100 rounded border" alt="Transportando bicicletas con seguridad">
       <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+        <h5>Transporte Seguro</h5>
+        <p>Protegemos tu bicicleta en cada trayecto.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="assets/dep/land/img/carousell/2.png" class="d-block w-100 rounded border" alt="...">
+      <img src="assets/dep/land/img/carousell/5.jpeg" class="d-block w-100 rounded border" alt="Eventos para ciclistas">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
+        <h5>Eventos Ciclistas</h5>
+        <p>Cubrimos tus aventuras en 2025.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="assets/dep/land/img/carousell/1.jpg" class="d-block w-100 rounded border" alt="...">
+      <img src="assets/dep/land/img/carousell/6.jpeg" class="d-block w-100 rounded border" alt="Servicios personalizados para bicicletas">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
+        <h5>Servicios Personalizados</h5>
+        <p>Todo lo que tu bici necesita.</p>
       </div>
     </div>
   </div>
@@ -58,23 +66,6 @@
   </button>
 </div>
 
-<style type="text/css">
-  .active-link {
-    position: relative;
-  }
-
-  .active-link::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 2px; /* Ajusta el grosor de la línea */
-    background-color: rgba(255, 255, 255, 0.5); /* Color de la línea */
-    position: absolute;
-    left: 0;
-    bottom: -5px; /* Ajusta la posición vertical de la línea */
-  }
-</style>
-
 <nav class="navbar navbar-expand-lg bg-dark rounded mt-1 border-0" data-bs-theme="dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Embajada Bike</a>
@@ -84,9 +75,7 @@
     <div class="collapse navbar-collapse" id="navbarColor02">
       <ul class="navbar-nav mx-auto">
         <li class="nav-item">
-          <a class="nav-link active active-link" href="#">COBERTURA DE EVENTOS 2025
-            <span class="visually-hidden">(current)</span>
-          </a>
+          <a class="nav-link active active-link" href="#">COBERTURA DE EVENTOS 2025</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">INICIO</a>
@@ -98,51 +87,30 @@
           <a class="nav-link" href="#">TALLERES</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">VEHICULOS</a>
+          <a class="nav-link" href="#">VEHÍCULOS</a>
         </li>
       </ul>
       <div class="d-flex">
         <a href="#" class="btn btn-outline-light me-2">Registrarse</a>
-        <a href="#" class="btn btn-primary me-2">Iniciar Sesión</a>        
+        <a href="#" class="btn btn-primary me-2">Iniciar Sesión</a>
       </div>
     </div>
   </div>
 </nav>
 
-
 <div class="container-fluid mt-4">
-  <div class="row g-0"> <!-- g-0 elimina el espacio entre columnas -->
-    <div class="col-6 col-md-3"> <!-- 6 columnas en pantallas pequeñas, 3 en pantallas medianas y grandes -->
-      <img src="assets/dep/land/img/oferts/1.jpg" class="img-fluid" alt="Imagen 1">
+  <div class="row justify-content-center g-4">
+    <div class="col-6 col-md-3">
+      <img src="assets/dep/land/img/oferts/7.jpeg" class="img-fluid" alt="Oferta de transporte de bicicletas">
     </div>
     <div class="col-6 col-md-3">
-      <img src="assets/dep/land/img/oferts/2.jpg" class="img-fluid" alt="Imagen 2">
+      <img src="assets/dep/land/img/oferts/8.jpeg" class="img-fluid" alt="Servicio personalizado para ciclistas">
     </div>
-    <div class="col-6 col-md-3">
-      <img src="assets/dep/land/img/oferts/3.png" class="img-fluid" alt="Imagen 3">
-    </div>
-    <div class="col-6 col-md-3">
-      <img src="assets/dep/land/img/oferts/4.jpg" class="img-fluid" alt="Imagen 4">
-    </div>
-    <div class="col-6 col-md-3">
-      <img src="assets/dep/land/img/oferts/5.jpg" class="img-fluid" alt="Imagen 5">
-    </div>
-    <div class="col-6 col-md-3">
-      <img src="assets/dep/land/img/oferts/6.jpg" class="img-fluid" alt="Imagen 6">
-    </div>
-
   </div>
 </div>
 
-<div class="row">
-  <div class="col">
-    
-  </div>
-</div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-
-  </body>
+</body>
 </html>
