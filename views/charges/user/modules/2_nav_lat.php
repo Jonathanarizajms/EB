@@ -10,21 +10,21 @@ if (!isset($_SESSION['user']) || empty($_SESSION['user'])) {
     exit;
 }
 
-// Verifica que el rol sea 1 o 2 (Admin/Super Admin)
+// Verifica que el rol sea 4 (Usuario normal)
 $userRole = (int) $_SESSION['user']['user_charge'];
-if ($userRole !== 1 && $userRole !== 2) {
+if ($userRole !== 4) {
     header("Location: index.php?c=Auth&a=login");
     exit;
 }
 
-// Si pasa las validaciones, asigna los datos del usuario a variables para usarlos
+// Asigna los datos del usuario a variables para usarlos en la vista
 $userName  = trim($_SESSION['user']['user_name'] . " " . $_SESSION['user']['user_last_name']);
 $userImage = !empty($_SESSION['user']['user_image'])
     ? "assets/images/profile/" . htmlspecialchars($_SESSION['user']['user_image'])
     : "assets/dep/dashboard/img/default.jpg";
 
-// Mapeo del rol (ya que aquí solo se espera 1 o 2, se puede simplificar)
-$userRoleText = ($userRole === 1) ? "Super-Admin" : "Admin";
+// Puesto que aquí solo se espera el rol 4, podemos asignar el texto correspondiente
+$userRoleText = "Usuario";
 ?>
 
 <div class="container-xxl position-relative bg-white d-flex p-0">
@@ -45,7 +45,8 @@ $userRoleText = ($userRole === 1) ? "Super-Admin" : "Admin";
                 </div>
             </div>
             <div class="navbar-nav w-100">
-                <a href="?c=Dashboard&a=main" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
+                <!-- Para usuarios normales, podrías redirigir a su panel, por ejemplo, c=User&a=main -->
+                <a href="?c=Profile&a=main" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Perfil</a>
                 <!-- Otras opciones del menú -->
             </div>
         </nav>

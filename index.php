@@ -1,31 +1,25 @@
 <?php
 
-     ob_start();
+    session_start();  // Se inicia la sesión de forma centralizada
 
-     require_once "models/Database.php";
+    ob_start();
 
-     if(!isset($_REQUEST['c'])){
+        require_once "models/Database.php";
 
-          require_once "controllers/Landing.php";
+            // Resto del código de ruteo...
+            if (!isset($_REQUEST['c'])) {
+                require_once "controllers/Landing.php";
+                $controller = new Landing;
+                $controller->main();
+            } else {
+                $controllerName = $_REQUEST['c'];
+                require_once "controllers/" . $controllerName . ".php";
+                $controller = new $controllerName;
+                $action = isset($_REQUEST['a']) ? $_REQUEST['a'] : 'main';
+                call_user_func([$controller, $action]);
+            }
 
-          $controller = new Landing;
 
-          $controller -> main();
-
-     } else {
-
-          $controller = $_REQUEST['c'];
-
-          require_once "controllers/" . $controller . ".php";
-
-          $controller = new $controller;
-
-          $action  = isset($_REQUEST['a']) ? $_REQUEST['a'] : 'main';
-
-          call_user_func(array($controller, $action));
-
-     }
-
-     ob_end_flush();
+    ob_end_flush();
 
 ?>
