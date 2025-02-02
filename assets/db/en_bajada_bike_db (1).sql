@@ -78,8 +78,8 @@ CREATE TABLE `charges` (
 INSERT INTO `charges` (`charge_id`, `charge_name`, `charge_desc`) VALUES
 (1, 'Super-Admin', 'acceso a todo'),
 (2, 'Admin', 'admin con acceso completo pero no total'),
-(7, 'Aliado', 'ally o aliado del sistema'),
-(8, 'Usuario', 'usuario comun o consumidor ');
+(3, 'Aliado', 'ally o aliado del sistema'),
+(4, 'Usuario', 'usuario comun o consumidor ');
 
 -- --------------------------------------------------------
 
